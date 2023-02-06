@@ -17,11 +17,13 @@ export default function Home() {
       <main className={styles.main}>
         <div className={styles.description}>
           <p>
-            Get started by editing&nbsp;
-            <code className={styles.code}>src/pages/index.js</code>
+            Ulysses Uribe
+            {/* Get started by editing&nbsp; */}
+            {/* <code className={styles.code}>src/pages/index.js</code> */}
           </p>
           <div>
-            <a
+            {/* upper right 'by Vercel logo with link */}
+            {/* <a
               href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
               target="_blank"
               rel="noopener noreferrer"
@@ -35,12 +37,12 @@ export default function Home() {
                 height={24}
                 priority
               />
-            </a>
+            </a> */}
           </div>
         </div>
 
         <div className={styles.center}>
-          <Image
+          {/* <Image
             className={styles.logo}
             src="/next.svg"
             alt="Next.js Logo"
@@ -56,7 +58,7 @@ export default function Home() {
               height={31}
               priority
             />
-          </div>
+          </div> */}
         </div>
 
         <div className={styles.grid}>
@@ -88,7 +90,7 @@ export default function Home() {
             </p>
           </a>
 
-          <a
+          {/* <a
             href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
@@ -100,9 +102,9 @@ export default function Home() {
             <p className={inter.className}>
               Discover and deploy boilerplate example Next.js&nbsp;projects.
             </p>
-          </a>
+          </a> */}
 
-          <a
+          {/* <a
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
             target="_blank"
@@ -115,7 +117,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a shareable URL
               with&nbsp;Vercel.
             </p>
-          </a>
+          </a> */}
         </div>
       </main>
     </>
