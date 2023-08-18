@@ -18,7 +18,7 @@ const Navbar = () => {
     <div className='fixed w-full h-20 shadow-xl z-[100] bg-white/90'> {/* ulysses__Navbar */}
         {/* ulysses__Navbar-main */}
         <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
-            <Image src={UlyssesLogo} alt="/" width={200} height={71} />
+            <Image src={UlyssesLogo} alt="/" width={200} height="auto" />
             <div> {/* ulysses__Navbar-menu */}
                 <ul className='hidden md:flex'> {/* ulysses__Navbar-menu-links */}
                     <Link href={'/#home'}>
@@ -42,21 +42,27 @@ const Navbar = () => {
                 </div>
             </div>
         </div>
-        <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen backdrop-blur-sm bg-black/30' : '' }> {/* ulysses__Navbar-mobile-shadow */}
+        {/* ulysses__Navbar-mobile-shadow */}
+        <div className={nav ? 'md:hidden fixed left-0 top-0 w-full h-screen backdrop-blur-sm bg-black/30 touch-none' : '' }> 
+            {/* ulysses__Navbar-mobile-exit-layer */}
+            <div onClick={handleNav} className={nav ? 'md:hidden fixed right-0 top-0 w-[25%] sm:w-[40%] md:w-[55%] h-screen touch-none' : '' }> </div>
             {/* ulysses__Navbar-mobile-sidebar */}
-            <div className={nav ? 'hover:overflow-auto fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-50 p-10 ease-in duration-100' : 'hidden' }>{/* ulysses__Navbar-mobile-sidebar */}
-                <div>{/* ulysses__Navbar-mobile-logo&exit */}
+            <div className={nav ? 'overflow-auto touch-auto fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-50 p-10 ease-in duration-100' : 'hidden' }>
+                <div>
+                    {/* ulysses__Navbar-mobile-logo&exit */}
                     <div className='flex w-full items-center justify-between'>
-                        <Image src={UlyssesLogo} alt="/" width={120} height={43} />
+                        <Image src={UlyssesLogo} alt="/" width={120} height="auto" />
                         <div onClick={handleNav} className='rounded-md shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-100'>
                             <AiOutlineClose />
                         </div>
                     </div>
-                    <div className='border-b border-gray-400 my-4'> {/* ulysses__Navbar-mobile-title */}
+                    {/* ulysses__Navbar-mobile-title */}
+                    <div className='border-b border-gray-400 my-4'> 
                         <p className='w-[85%] py-4'>Let&apos;s build together</p>
                     </div>
                 </div>
-                <div className='py-4 flex flex-col '>{/* ulysses__Navbar-mobile-menulinks */}
+                {/* ulysses__Navbar-mobile-menulinks */}
+                <div className='py-4 flex flex-col '>
                     <ul>
                         <Link onClick={handleNav} href={'/#home'}>
                             <li className='py-4 cursor-pointer hover:border-b border-gray-400'>Home</li>
