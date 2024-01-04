@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar'
 import Intro from '@/components/Intro'
 import Contact from '@/components/Contact'
 import About from '@/components/About'
+import Certifications from '@/components/Certifications'
 // import styles from '@/styles/Home.module.css'
 
 const inter = Inter({ subsets: ['latin'] })
@@ -21,6 +22,7 @@ export default function Home() {
       <Navbar />
       <Intro />
       <About />
+      <Certifications />
       <Contact />
     </>
   )
