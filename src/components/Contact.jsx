@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div id='contactMe' className='w-full h-full flex items-center'>
         <div className='max-w-[1240px] w-2/3 h-full pt-2 m-auto flex flex-col'>
-            <h2 className='tracking-widest text-blue-800 text-center'>Let&apos;s Connect</h2>
+            <h2 className='tracking-widest text-blue-800 text-left'>Let&apos;s Connect</h2>
             <div className='flex items-center justify-between my-4 py-2 w-full'>
                 <a href="https://www.linkedin.com/in/ulyssesuribe/">
                     <div className='rounded-md shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-100'>
