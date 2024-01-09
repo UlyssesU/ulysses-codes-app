@@ -13,7 +13,7 @@ const Intro = () => {
                 <h3>with a focus on Front End Development</h3>
             </div>
             <div className='py-4 w-full h-full'>
-                <Image className='rounded-lg w-auto max-h-[100%] mx-0' src={ProfilePic} alt="/" />
+                <Image className='rounded-lg w-auto max-h-[100%] mx-auto' src={ProfilePic} alt="/" />
             </div>
         </div>
     </div>
