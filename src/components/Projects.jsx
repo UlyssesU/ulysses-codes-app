@@ -1,7 +1,7 @@
 import React from 'react'
 import Image from 'next/image'
 import Mydearestjulia from '../public/assets/mydearestjulia.jpg'
-import Ratemylandlord from '../public/assets/rateMyLandlord_index.jpg'
+import Ratemylandlord from '../public/assets/rateMyLandlord.jpg'
 
 const Projects = () => {
   return (
