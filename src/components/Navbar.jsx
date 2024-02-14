@@ -33,6 +33,9 @@ const Navbar = () => {
                     <Link href={'/#projects'}>
                         <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Projects</li>
                     </Link>
+                    <Link href={'/#certifications'}>
+                        <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Certifications</li>
+                    </Link>
                     <Link href={'/#contactMe'}>
                         <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Contact Me</li>
                     </Link>
@@ -75,6 +78,9 @@ const Navbar = () => {
                         </Link>
                         <Link onClick={handleNav} href={'/#projects'}>
                             <li className='py-4 cursor-pointer hover:border-b border-gray-400'>Projects</li>
+                        </Link>
+                        <Link onClick={handleNav} href={'/#certifications'}>
+                            <li className='py-4 cursor-pointer hover:border-b border-gray-400'>Certifications</li>
                         </Link>
                         <Link onClick={handleNav} href={'/#contactMe'}>
                             <li className='py-4 cursor-pointer hover:border-b border-gray-400'>Contact Me</li>
