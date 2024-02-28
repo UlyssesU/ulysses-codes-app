@@ -7,8 +7,8 @@ const Skills = () => {
   return (
     <div id='skills' className='w-full min-h-min flex items-center'>
         <div className='max-w-[1240px] w-2/3 h-full py-24 m-auto flex flex-col'>
-            <h2 className='tracking-widest text-blue-800 text-left'>Skills</h2>
-            <div className='pt-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6'>
+            <h2 className='tracking-widest pb-6 text-blue-800 text-left'>Skills</h2>
+            <div className='p-6 grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 shadow-lg rounded-lg mx-0'>
                 <div className='flex flex-row items-center'>
                     <FaPython /> Python
                 </div>

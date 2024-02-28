@@ -8,40 +8,47 @@ import { FaCodepen } from 'react-icons/fa'
 import { useState } from 'react';
 
 
-const Navbar = () => {
+const Navbar = (darkMode) => {
     const [nav, setNav] = useState(false);
+    const dark = (darkMode.dark);
     const handleNav = () => {
         setNav(!nav)
     }
+    const handleDark = () => {
+        setDark(!dark)
+    }
+    if (darkMode === true) {
+        handleDark
+    }
 
   return (
-    <div className='fixed w-full h-20 shadow-xl z-[100] bg-white/90'> {/* ulysses__Navbar */}
+    <div className={dark ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-800 text-white" : 'fixed w-full h-20 shadow-xl z-[100] bg-white/90'}> {/* ulysses__Navbar */}
         {/* ulysses__Navbar-main */}
-        <div className='flex justify-between items-center w-full h-full px-2 2xl:px-16'>
+        <div className='flex justify-between items-center w-full h-full px-2 lg:px-8 xl:px-16'>
             <Image src={UlyssesLogo} alt="/" width={200} height="auto" />
             <div> {/* ulysses__Navbar-menu */}
                 <ul className='hidden md:flex'> {/* ulysses__Navbar-menu-links */}
                     <Link href={'/#home'}>
-                        <li className='cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Home</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Home</li>
                     </Link>
                     <Link href={'/#aboutMe'}>
-                        <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>About Me</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>About Me</li>
                     </Link>
                     <Link href={'/#skills'}>
-                        <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Skills</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Skills</li>
                     </Link>
                     <Link href={'/#projects'}>
-                        <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Projects</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Projects</li>
                     </Link>
                     <Link href={'/#certifications'}>
-                        <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Certifications</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Certifications</li>
                     </Link>
                     <Link href={'/#contactMe'}>
-                        <li className='ml-10 cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100'>Contact Me</li>
+                        <li className='ml-1 py-2 px-2 lg:(px-4) hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Contact Me</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden'> {/* ulysses__Navbar-menu-icon */} 
-                    <AiOutlineMenu size={21} />
+                    <AiOutlineMenu size={28} />
                 </div>
             </div>
         </div>
@@ -50,7 +57,7 @@ const Navbar = () => {
             {/* ulysses__Navbar-mobile-exit-layer */}
             <div onClick={handleNav} className={nav ? 'md:hidden fixed right-0 top-0 w-[25%] sm:w-[40%] md:w-[55%] h-screen touch-none' : '' }> </div>
             {/* ulysses__Navbar-mobile-sidebar */}
-            <div className={nav ? 'overflow-auto touch-auto fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-50 p-10 ease-in duration-100' : 'hidden' }>
+            <div className={nav ? dark ? 'overflow-auto touch-auto fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-slate-800 p-10 ease-in duration-100' : 'overflow-auto touch-auto fixed left-0 top-0 w-[75%] sm:w-[60%] md:w-[45%] h-screen bg-gray-50 p-10 ease-in duration-100' : 'hidden' }>
                 <div>
                     {/* ulysses__Navbar-mobile-logo&exit */}
                     <div className='flex w-full items-center justify-between'>
@@ -91,7 +98,7 @@ const Navbar = () => {
                         <div className='flex items-center justify-between my-4 w-full sm:w-[80%]'>
                             <a href="https://www.linkedin.com/in/ulyssesuribe/">
                                 <div className='rounded-md shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-110 ease-in duration-100'>
-                                    <BsLinkedin color='blue' />
+                                    <BsLinkedin />
                                 </div>
                             </a>
                             <a href="https://github.com/UlyssesU/">

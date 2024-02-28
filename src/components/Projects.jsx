@@ -11,7 +11,7 @@ const Projects = () => {
         <div className='max-w-[1240px] w-2/3 h-full py-24 m-auto flex flex-col'>
             <h2 className='tracking-widest text-blue-800 text-left'>Projects</h2>
             <div className='pt-6 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 [&:hover>div]:opacity-50'>
-                <div className='hover:!opacity-100 shadow-lg rounded'>
+                <div className='hover:!opacity-100 shadow-lg rounded-lg'>
                     <a href="https://github.com/UlyssesU/ulysses-codes-app">
                         <h3 className='text-center'>Portfolio Webpage</h3>
                         <Image src={Myportfolio} alt="image of webpage for ulyssescodes.dev"></Image>
@@ -21,7 +21,7 @@ const Projects = () => {
                         </div>
                     </a>
                 </div>
-                <div className='hover:!opacity-100 shadow-lg rounded'>
+                <div className='hover:!opacity-100 shadow-lg rounded-lg'>
                     <a href="https://mydearestjulia.com/">
                         <h3 className='text-center'>MyDearestJulia Website</h3>
                         <Image src={Mydearestjulia} alt="image of webpage for mydearestjulia.com"></Image>
@@ -31,7 +31,7 @@ const Projects = () => {
                         </div>
                     </a>    
                 </div>
-                <div className='hover:!opacity-100 shadow-lg rounded'>
+                <div className='hover:!opacity-100 shadow-lg rounded-lg'>
                     <a href="https://github.com/UlyssesU/rateMyLandlord/tree/main">
                         <h3 className='text-center'>RateMyLandlord Website</h3>
                         <Image src={Ratemylandlord} alt="image of webpage for ratemylandlord.com"></Image>
@@ -41,7 +41,7 @@ const Projects = () => {
                         </div>
                     </a>
                 </div>
-                <div className='hover:!opacity-100 shadow-lg rounded'>
+                <div className='hover:!opacity-100 shadow-lg rounded-lg'>
                     <a href="https://github.com/rivatadutta/Report-Wildfires">
                         <h3 className='text-center'>Incident Reporting Mobile App</h3>
                         <Image src={Incidentreporting} alt="image of mobile app for incident reporting"></Image>
