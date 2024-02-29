@@ -22,33 +22,33 @@ const Navbar = (darkMode) => {
     }
 
   return (
-    <div className={dark ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-800 text-white" : 'fixed w-full h-20 shadow-xl z-[100] bg-white/90'}> {/* ulysses__Navbar */}
+    <div className={dark ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-800 text-white" : 'fixed w-full h-20 shadow-xl z-[100] bg-gray-50'}> {/* ulysses__Navbar */}
         {/* ulysses__Navbar-main */}
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-8 xl:px-16'>
             <Image src={UlyssesLogo} alt="/" width={200} height="auto" />
             <div> {/* ulysses__Navbar-menu */}
                 <ul className='hidden md:flex'> {/* ulysses__Navbar-menu-links */}
                     <Link href={'/#home'}>
-                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Home</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded'>Home</li>
                     </Link>
                     <Link href={'/#aboutMe'}>
-                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>About Me</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded'>About Me</li>
                     </Link>
                     <Link href={'/#skills'}>
-                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Skills</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded'>Skills</li>
                     </Link>
                     <Link href={'/#projects'}>
-                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Projects</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded'>Projects</li>
                     </Link>
                     <Link href={'/#certifications'}>
-                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Certifications</li>
+                        <li className='ml-1 py-2 px-2 lg:px-4 hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded'>Certifications</li>
                     </Link>
                     <Link href={'/#contactMe'}>
-                        <li className='ml-1 py-2 px-2 lg:(px-4) hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded '>Contact Me</li>
+                        <li className='ml-1 py-2 px-2 lg:(px-4) hover:bg-gray-100 hover:font-bold hover:scale-105 ease-in duration-100 rounded'>Contact Me</li>
                     </Link>
                 </ul>
                 <div onClick={handleNav} className='md:hidden'> {/* ulysses__Navbar-menu-icon */} 
-                    <AiOutlineMenu size={28} />
+                    <AiOutlineMenu size={28}className='rounded shadow-lg shadow-gray-400' />
                 </div>
             </div>
         </div>

@@ -7,7 +7,7 @@ const Intro = () => {
   return (
     <div id='home' className='w-full min-h-screen items-center'>
         {/*ulysses__Intro-container */}
-        <div className='pt-36 max-w-[1240px] w-2/3 h-full mx-auto flex flex-col justify-center'>
+        <div className='pt-32 max-w-[1240px] w-2/3 h-full mx-auto flex flex-col justify-center'>
             {/* <div className='flex items-end'>
                 <MdOutlineDarkMode onClick={() => setDarkMode(!darkMode)} className='cursor-pointer text-3xl'/>
             </div> */}

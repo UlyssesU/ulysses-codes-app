@@ -31,7 +31,7 @@ export default function Home() {
       <Navbar dark={dark}/>
       <Intro />
       <div className='fixed top-24 right-2 lg:right-8 xl:right-16 flex items-end'>
-            <MdOutlineDarkMode onClick={handleDark} className='cursor-pointer text-3xl'/>
+            <MdOutlineDarkMode onClick={handleDark} className='cursor-pointer text-3xl rounded-full shadow-lg shadow-gray-400'/>
         </div>
       <About />
       <Skills />
