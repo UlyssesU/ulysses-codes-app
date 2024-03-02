@@ -1,6 +1,6 @@
 import React from 'react'
 import Image from 'next/image'
-import ProfilePic from '../public/assets/websitepic.png'
+import ProfilePic from '../public/assets/heroshot2.jpg'
 import { MdOutlineDarkMode } from "react-icons/md";
 
 const Intro = () => {
@@ -16,8 +16,8 @@ const Intro = () => {
                 <h2>Software Developer</h2>
                 <h3>with a focus on Front End Development</h3>
             </div>
-            <div className='py-4 w-full h-full'>
-                <Image className='rounded-lg w-auto max-h-[100%] mx-auto' src={ProfilePic} alt="/" />
+            <div className='pt-4 w-full h-full'>
+                <Image className='rounded-full w-full h-full mx-auto' src={ProfilePic} alt="/" />
             </div>
         </div>
     </div>
