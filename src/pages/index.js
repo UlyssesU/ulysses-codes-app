@@ -12,7 +12,7 @@ import Projects from '@/components/Projects'
 import { useState } from 'react'
 import { MdOutlineDarkMode } from "react-icons/md";
 import { Analytics } from "@vercel/analytics/react"
-
+import { SpeedInsights } from "@vercel/speed-insights/next"
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -40,6 +40,7 @@ export default function Home() {
       <Certifications />
       <Contact />
       <Analytics />
+      <SpeedInsights/>
     </div>
   )
 }
