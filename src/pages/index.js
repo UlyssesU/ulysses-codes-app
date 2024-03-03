@@ -11,6 +11,7 @@ import Projects from '@/components/Projects'
 // import styles from '@/styles/Home.module.css'
 import { useState } from 'react'
 import { MdOutlineDarkMode } from "react-icons/md";
+import { Analytics } from "@vercel/analytics/react"
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -38,6 +39,7 @@ export default function Home() {
       <Projects />
       <Certifications />
       <Contact />
+      <Analytics />
     </div>
   )
 }

@@ -22,7 +22,7 @@ const Navbar = (darkMode) => {
     }
 
   return (
-    <div className={dark ? "fixed w-full h-20 shadow-xl z-[100] bg-slate-800 text-white" : 'fixed w-full h-20 shadow-xl z-[100] bg-gray-50'}> {/* ulysses__Navbar */}
+    <div className={dark ? "fixed w-full h-20 shadow-xl z-50 bg-slate-800 text-white" : 'fixed w-full h-20 shadow-xl z-50 bg-gray-50'}> {/* ulysses__Navbar */}
         {/* ulysses__Navbar-main */}
         <div className='flex justify-between items-center w-full h-full px-2 lg:px-8 xl:px-16'>
             <Image src={UlyssesLogo} alt="/" width={200} height="auto" />
