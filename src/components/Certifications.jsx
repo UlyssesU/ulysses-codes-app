@@ -4,8 +4,8 @@ import { SiCredly, SiFreecodecamp, SiEdx } from "react-icons/si";
 const Certifications = () => {
   return (
     <div id='certifications' className='w-full min-h-min flex items-center'>
-        <div className='max-w-[1240px] w-4/5 lg:w-2/3 h-full py-12 m-auto flex flex-col'>
-            <h2 className='tracking-widest text-blue-800 text-left'>Certifications</h2>
+        <div className='max-w-[1240px] w-4/5 lg:w-2/3 h-full pt-12 m-auto flex flex-col'>
+            <h2 className='tracking-widest text-blue-800 text-left mt-8'>Certifications</h2>
             <div className='mt-4 p-4 shadow-lg rounded-lg lg:pr-32 xl:pr-80'>
                 <a href="https://tinyurl.com/5cckr39u ">
                     <div className='pt-4 flex flex-row underline cursor-pointer hover:font-bold hover:scale-105 ease-in duration-100 items-center justify-between'> EdX Prompt Engineering and Advanced ChatGPT 2024 <SiEdx  size={28} />

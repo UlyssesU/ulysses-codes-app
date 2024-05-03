@@ -8,8 +8,8 @@ import Incidentreporting from '../public/assets/incidentreporting.jpg'
 const Projects = () => {
   return (
     <div id='projects' className='w-full min-h-min flex items-center'>
-        <div className='max-w-[1240px] w-4/5 lg:w-2/3 h-full py-12 m-auto flex flex-col'>
-            <h2 className='tracking-widest text-blue-800 text-left'>Projects</h2>
+        <div className='max-w-[1240px] w-4/5 lg:w-2/3 h-full pt-12 m-auto flex flex-col'>
+            <h2 className='tracking-widest text-blue-800 text-left mt-8'>Projects</h2>
             <div className='mt-4 grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6 [&:hover>div]:opacity-50'>
                 <div className='hover:!opacity-100 rounded-md shadow-lg shadow-gray-400'>
                     <a href="https://github.com/UlyssesU/ulysses-codes-app">
